@@ -1,12 +1,11 @@
 import "../styles/style.css"
+import { Link } from "react-router-dom";
 
-function AnimeLists({ title, image, url }) {
+function AnimeLists({ title, image, url, id }) {
     return (
       <div className="anime-lists">
         <img src={image} alt={title} />
-        <a href={url} target="_blank" rel="noopener noreferrer">
-          {title}
-        </a>
+        <Link to={`/details/${id}`}>{title}</Link>
       </div>
     );
   }

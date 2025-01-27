@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+header strong {
+    color: #000;
+}
+
+.content-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.anime-lists {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    justify-content: space-between; /* Menyesuaikan konten di dalam */
+}
+
+.anime-lists:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.anime-lists img {
+    max-width: 100%;
+    height: auto; 
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.anime-lists a {
+    color: #333;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.anime-lists a:hover {
+    color: #007BFF;
+}
+
+.menu-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Membuat elemen berada di tengah secara vertikal */
+    padding: 20px 0;
+}
+
+.anime-nav {
+    font-size: 1rem;
+    color: #333;
+    padding-left: 20px;
+}
+
+.anime-nav a {
+    color: #007BFF; /* Warna biru untuk tautan */
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px; /* Menambahkan jarak antar tautan */
+    transition: color 0.3s; /* Efek transisi pada hover */
+}
+
+.anime-nav a:hover {
+    color: #0056b3; /* Warna biru lebih gelap saat hover */
+}
+
+.anime-src {
+    width: 300px; /* Lebar input */
+    padding: 8px 12px; /* Memberikan padding dalam input */
+    border: 1px solid #ddd; /* Border abu-abu */
+    border-radius: 5px; /* Sudut membulat */
+    font-size: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Memberikan efek bayangan */
+    transition: box-shadow 0.3s, border-color 0.3s; /* Efek saat input aktif */
+}
+
+.anime-src:focus {
+    border-color: #007BFF; /* Warna border biru saat aktif */
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); /* Efek bayangan lebih jelas */
+    outline: none; /* Menghilangkan outline bawaan browser */
+}
+
+.anime-details {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .anime-header {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .anime-poster {
+    width: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .anime-info {
+    flex: 1;
+  }
+  
+  .anime-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .anime-info p {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  
+  .anime-synopsis {
+    margin-top: 20px;
+  }
+  
+  .anime-synopsis h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .anime-synopsis p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+  } 
+
+  .watch-btn {
+    display: inline-block;
+    margin-top: 50px;
+    padding: 10px 20px;
+    background-color: #ff5722; /* Warna oranye */
+    color: #fff; /* Warna teks putih */
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .watch-btn:hover {
+    background-color: #e64a19; /* Warna oranye lebih gelap */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px); /* Efek hover naik */
+  }
+  
+  .anime-trailer:active {
+    background-color: #d84315; /* Warna lebih gelap saat ditekan */
+    transform: translateY(0); /* Menghilangkan efek hover */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+  }
+
+  .anime-video {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;    
+    margin-top: 5px;
+  }
+  
+  .anime-video iframe {
+    width: 100%;
+    max-width: 400px; 
+    height: 200px;
+    border: none;
+    border-radius: 10px; 
+  }
+
+  .cls-btn {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: rgb(78, 76, 76);
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    z-index: 10; 
+  }
+
+  .cls-btn:hover {
+    background-color: rgba(255, 0, 0, 0.8);
+}
+  
+
+
+  
+

@@ -1,13 +1,14 @@
 import "../styles/style.css"
-import { Link } from "react-router-dom"
 
-const Menu = ({onSubmit, value, setAnimeTitle}) => {
+const Menu = ({onSubmit, value, setAnimeTitle, isSearch}) => {
   return (
     <div className="menu-wrapper">
-        <div className="anime-nav">
+        {isSearch && (
+          <div className="anime-nav">
             <a href="">Popular Anime</a> 
-        </div>
+          </div>
 
+        )}
         <form onSubmit={onSubmit}>
           <input 
               type="text" 

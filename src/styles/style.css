@@ -90,13 +90,16 @@ header strong {
 }
 
 .anime-src {
-    width: 300px; /* Lebar input */
-    padding: 8px 12px; /* Memberikan padding dalam input */
+    width: 300px; 
+    padding: 8px 12px; 
     border: 1px solid #ddd; /* Border abu-abu */
     border-radius: 5px; /* Sudut membulat */
     font-size: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Memberikan efek bayangan */
     transition: box-shadow 0.3s, border-color 0.3s; /* Efek saat input aktif */
+    position: absolute;
+    top: 14%;
+    right: 10px;
 }
 
 .anime-src:focus {
@@ -203,23 +206,77 @@ header strong {
 
   .cls-btn {
     position: absolute;
-    width: 30px;
-    height: 30px;
-    margin-left: 285px;
-    border-radius: 5px;
+    width: 25px;
+    height: 25px;
+    margin-left: 290px;
+    border-radius: 20px;
     background-color: transparent;
     color: rgb(78, 76, 76);
     font-size: 16px;
     font-weight: bold;
     text-align: center;
-    line-height: 30px;
+    line-height: 23px;
     cursor: pointer;
     z-index: 10; 
   }
 
   .cls-btn:hover {
     background-color: rgba(255, 0, 0, 0.8);
-}
+  }
+
+  .skeleton-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  .skeleton-image {
+    width: 100%;
+    height: 150px;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    animation: pulse 1.5s infinite ease-in-out;
+  }
+  
+  .skeleton-title {
+    width: 80%;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    animation: pulse 1.5s infinite ease-in-out;
+  }
+  
+  .skeleton-line {
+    width: 90%;
+    height: 12px;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    margin-bottom: 6px;
+    animation: pulse 1.5s infinite ease-in-out;
+  }
+  
+  @keyframes pulse {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  
+  
   
 
 

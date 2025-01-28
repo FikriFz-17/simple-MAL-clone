@@ -21,7 +21,7 @@ function Details() {
   }, [params.id]);
 
   if (!detailedAnime) {
-    return <div>Loading...</div>; // Tampilkan "Loading..." jika data belum tersedia
+    return <div>Loading...</div>; 
   }
 
   const WatchClick = () => {

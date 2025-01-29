@@ -11,7 +11,7 @@ MAL ( My Anime List ) simple clone using jikan API
 - **React**: The main framework for building the UI.
 - **React Router**: For managing page navigation.
 - **Fetch API**: To fetch data from the Jikan API.
-- **CSS** (Optional): For styling.
+- **CSS**: For styling.
 
 ## Installation & Running the Project
 1. Clone the repository:
@@ -25,7 +25,7 @@ MAL ( My Anime List ) simple clone using jikan API
    ```
 3. Run the project:
    ```sh
-   npm start
+   yarn dev
    ```
 
 ## API

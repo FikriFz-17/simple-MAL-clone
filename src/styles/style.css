@@ -102,6 +102,23 @@ header strong {
     right: 10px;
 }
 
+@media (max-width: 600px) {
+  .anime-src {
+    width: 200px; 
+    padding: 8px 12px; 
+    border: 1px solid #ddd; /* Border abu-abu */
+    border-radius: 5px; /* Sudut membulat */
+    font-size: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Memberikan efek bayangan */
+    transition: box-shadow 0.3s, border-color 0.3s; /* Efek saat input aktif */
+    position: absolute;
+    top: 14%;
+    right: 10px;
+  }
+}
+
+
+
 .anime-src:focus {
     border-color: #007BFF; /* Warna border biru saat aktif */
     box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); /* Efek bayangan lebih jelas */
@@ -176,6 +193,24 @@ header strong {
     transition: all 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
+
+  @media (max-width: 600px){
+    .watch-btn{
+      display: inline-block;
+      margin-top: 50px;
+      padding: 10px 20px;
+      background-color: #ff5722; /* Warna oranye */
+      color: #fff; /* Warna teks putih */
+      font-size: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+  }
   
   .watch-btn:hover {
     background-color: #e64a19; /* Warna oranye lebih gelap */
@@ -195,6 +230,7 @@ header strong {
     align-items: center;    
     margin-top: 5px;
   }
+
   
   .anime-video iframe {
     width: 100%;
@@ -203,7 +239,16 @@ header strong {
     border: none;
     border-radius: 10px; 
   }
-
+  
+  @media (max-width: 600px) {
+    .anime-video iframe{
+      width: 100%;
+      max-width: 245px; 
+      height: 185px;
+      border: none;
+      border-radius: 10px; 
+    }
+  }
   .cls-btn {
     position: absolute;
     width: 25px;
@@ -218,6 +263,24 @@ header strong {
     line-height: 23px;
     cursor: pointer;
     z-index: 10; 
+  }
+
+  @media (max-width: 600px) {
+    .cls-btn{
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      margin-left: 235px;
+      border-radius: 20px;
+      background-color: transparent;
+      color: rgb(78, 76, 76);
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      line-height: 23px;
+      cursor: pointer;
+      z-index: 10; 
+    }
   }
 
   .cls-btn:hover {
@@ -275,7 +338,9 @@ header strong {
     }
   }
 
-  
+  .anime-title{
+    text-decoration: none;
+  }
   
   
 

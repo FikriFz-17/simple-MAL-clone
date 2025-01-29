@@ -22,7 +22,6 @@ function Home() {
         : `https://api.jikan.moe/v4/top/anime`;
       const res = await fetch(url);
       const anime = await res.json();
-      console.log(anime);
       setAnimeLists(query ? anime.data : anime.data.slice(0, 12));
     } catch (error) {
       console.error("Error fetching anime list:", error);

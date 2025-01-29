@@ -1,8 +1,40 @@
-# React + Vite
+# Simple Mal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+MAL ( My Anime List ) simple clone using jikan API
 
-Currently, two official plugins are available:
+## Features
+- **Routing Implementation** for navigating between pages.
+- **React Hooks** usage for state management and side effects.
+- **Fetching data from Jikan API** to display anime information.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
+- **React**: The main framework for building the UI.
+- **React Router**: For managing page navigation.
+- **Fetch API**: To fetch data from the Jikan API.
+- **CSS** (Optional): For styling.
+
+## Installation & Running the Project
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/username/simple-mal.git
+   cd simple-mal
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Run the project:
+   ```sh
+   npm start
+   ```
+
+## API
+This application uses [Jikan API](https://jikan.moe/) to retrieve anime data. Example endpoints used:
+- **Popular Anime List**: `https://api.jikan.moe/v4/top/anime`
+- **Anime Details**: `https://api.jikan.moe/v4/anime/{id}`
+- **Search Anime** : `https://api.jikan.moe/v4/anime?q=${query}`
+
+## Demo
+visit this link 👉 : 
+
+

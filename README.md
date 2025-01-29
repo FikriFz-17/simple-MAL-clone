@@ -35,6 +35,6 @@ This application uses [Jikan API](https://jikan.moe/) to retrieve anime data. Ex
 - **Search Anime** : `https://api.jikan.moe/v4/anime?q=${query}`
 
 ## Demo
-visit this link 👉 : 
+visit this link 👉 : https://simple-mal.vercel.app/
 
 
